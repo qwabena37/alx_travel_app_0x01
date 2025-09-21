@@ -1,0 +1,52 @@
+# Make sure you're in the alx_travel_app directory where manage.py is located
+# Create .gitignore file
+@'
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
+# IDE
+.vscode/
+.zencoder/
+.quodo/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Celery
+celerybeat-schedule
+celerybeat.pid
+
+# Redis
+dump.rdb
+'@ | Out-File -FilePath ".gitignore" -Encoding UTF8
